@@ -1,0 +1,21 @@
+{
+  "name": "Satta Matka Pro",
+  "short_name": "Matka Pro",
+  "description": "Fastest Live Satta Matka Results, Jodi Chart, Panel Charts",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a2e",
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

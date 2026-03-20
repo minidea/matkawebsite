@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Satta Matka Pro - Live Results, Jodi Charts, and Panel Charts. Fastest Matka Results online.">
+    <meta name="keywords" content="satta matka, kalyan matka, matka result, satta matka result, dpboss, kalyan chart">
+    
+    <title>Satta Matka Pro | Fastest Live Matka Results</title>
+    
+    <!-- SEO Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Satta Matka Pro",
+      "url": "https://sattamatkapro.com",
+      "description": "Fastest live Satta Matka results and charts."
+    }
+    </script>
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1a1a2e">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="light-mode">
+    <!-- Header Strategy -->
+    <header class="sticky-header">
+        <div class="container header-container">
+            <a href="/" class="logo">
+                <h1>Satta Matka Pro</h1>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="/" class="active">Live Results</a></li>
+                    <li><a href="#markets">All Markets</a></li>
+                    <li><a href="/pages/jodi-chart.html" class="chart-link">Jodi Charts</a></li>
+                    <li><a href="/pages/panel-chart.html" class="chart-link">Panel Charts</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <span class="icon dark-icon">🌙</span>
+                    <span class="icon light-icon" style="display: none;">☀️</span>
+                </button>
+                <!-- Admin login link -->
+                <a href="/pages/admin.html" class="admin-link">Admin</a>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" aria-label="Open Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Live Results Section -->
+        <section class="live-results-section card">
+            <h2 class="section-title blink-text">🔴 Live Result</h2>
+            <div id="live-result-container" class="live-result-grid">
+                <!-- Data populated by JS -->
+                <div class="loading-spinner">Loading Live Results...</div>
+            </div>
+        </section>
+
+        <!-- Markets Section (e.g. Milan Day, Kalyan, etc.) -->
+        <section id="markets" class="markets-section">
+            <div class="section-header">
+                <h2 class="section-title">All Markets</h2>
+                <div class="search-box">
+                    <input type="text" id="market-search" placeholder="Search Market...">
+                </div>
+            </div>
+            
+            <div id="markets-container" class="markets-grid">
+                <!-- Data populated by JS -->
+                <div class="loading-spinner">Loading Markets...</div>
+            </div>
+        </section>
+
+        <!-- About/SEO Content Section -->
+        <section class="seo-content card">
+            <h2>Welcome to Satta Matka Pro</h2>
+            <p>Get the fastest live Satta Matka results, Kalyan Matka charts, Main Mumbai charts, and Milan Day/Night charts. We provide 100% genuine and fast matka results. Refresh the page to see the latest updates or wait for the auto-refresh mechanism to update the results instantly.</p>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-about">
+                <h3>Satta Matka Pro</h3>
+                <p>The most trusted and fastest matka results website online.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pages/jodi-chart.html">Jodi Charts</a></li>
+                    <li><a href="/pages/panel-chart.html">Panel Charts</a></li>
+                    <li><a href="/pages/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Satta Matka Pro. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Service Worker Registration & Main Script -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
