@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Auth routes
+RewriteRule ^auth/login$ auth.php [L]
+
+# Results
+RewriteRule ^results/today$ results.php?action=today [L,QSA]
+RewriteRule ^results$ results.php [L,QSA]
+
+# Markets
+RewriteRule ^markets$ markets.php [L,QSA]
+
+# Charts
+RewriteRule ^jodi-chart/([0-9a-zA-Z]+)$ jodi-chart.php?market=$1 [L,QSA]
+RewriteRule ^panel-chart/([0-9a-zA-Z]+)$ panel-chart.php?market=$1 [L,QSA]
